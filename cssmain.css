@@ -1,10 +1,12 @@
 /* top section  */
 
 body {
-    margin: 0;
-    width: 100%;
-    height:100vh;
+    margin: 0px;
+    padding: 0px;
+    /* width: 100%;
+    height:100vh; */
     background-color: black;
+    font-family: arial; 
 }
 
 header {
@@ -27,9 +29,12 @@ header {
 }
 
 .home-nav{
-    display: flex; 
+    display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
     align-items: center;
+    align-content: center;
 }
 
 .home-nav img {
@@ -76,9 +81,10 @@ beginning of middle section
 */
 
 .info-section {
-    height: 1000px;
+    height: 1200px;
     width: 100%;
     background-color: white;
+    
 }
 
 .banner-text{
@@ -89,8 +95,7 @@ beginning of middle section
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-    bottom:0;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
 }
 
 .banner-text, h1 {
@@ -99,23 +104,59 @@ beginning of middle section
     
 }
 
+/* A note on the content-boxes PLEASE READ
+I know that best practice is to not repeat things in CSS
+but rather to make a big container that will govern all the little ones
+in the same way. I have tried many ways to get this to work in this
+section but I just could not figure out how to get the shadow box to 
+apply to each box individually AND have the flex settings work properly. 
+So, I opted for making separate containers for each box and applying the 
+settings that way, though I know that it makes my code a little long
+and redundant. Here's to learning how to do CSS!
+
+*/
+
 .content-boxes {
-    height: 300px;
-    width: 400px;
-    margin: 10px 10px 10px 10px;
-    padding: 5px 5px 5px 5px;
     display: flex;
-    flex-direction: row;
-    /* justify-content: space-evenly; */
-    box-sizing: border-box;
-    border: 3px;
-    border-color: lightgrey;
-    box-shadow: lightgray;
-    word-wrap: normal;
+    flex-direction: row; 
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.box-1 {
+    padding:20px;
+    box-shadow: 0px 0px 30px #6d6c6c;
+    width:300px;
+    height: 400px;
+    font-size: 16px;
+    position: relative;
+    margin:20px
     
 }
 
-.content-boxes, h5 {
+.box-2 {
+    padding:20px;
+    box-shadow: 0px 0px 30px #6d6c6c;
+    width:300px;
+    height: 400px;
+    font-size: 16px;
+    position: relative;
+    margin:20px
+}
+
+.box-3 {
+    padding:20px;
+    box-shadow: 0px 0px 30px #6d6c6c;
+    width:300px;
+    height: 400px;
+    font-size: 16px;
+    position: relative;
+    margin:20px
+}
+
+h5 {
     color: navy;
     font-size: x-small;
     
@@ -126,7 +167,7 @@ beginning of middle section
 beginning of bottom section */
 
 footer {
-    height: 10vh;
+    height: 50px;
     width: 100%;
     background-color: black;
     
@@ -138,19 +179,9 @@ footer {
     color: white;
     display: flex;
     flex-direction: row;
-    /* justify-content: flex-start; */
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
     
 }
-
-/* .footer-text, img {
-    float: left;
-}
-
-.footer-text, h2 {
-    text-align: center;
-} */
-
-/* .footer-text, h3 {
-    float: right;
-    
-}  */
