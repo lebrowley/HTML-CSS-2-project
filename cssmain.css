@@ -1,0 +1,156 @@
+/* top section  */
+
+body {
+    margin: 0;
+    width: 100%;
+    height:100vh;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: black;
+    position: fixed;
+    /* box-sizing: border-box; */
+}
+
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    width:100vw;
+    /* justify-content: space-around; */
+    /* margin: auto;
+    padding: 0px;  */
+    
+}
+
+.home-nav{
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+}
+
+.home-nav img {
+    float: left;
+}
+
+.home-nav, h4 {
+    color: white;
+    font-size: small;
+    float: right;
+    margin: 10px;
+}
+
+.image-label-box {
+    width: 100%;
+    height: 170px;
+    background: black; 
+}
+
+h1 {
+    padding: 30px;
+    font-size: 30px;
+    color: white
+    
+}
+
+button {
+    float: right;
+    font-size: small;
+    background-color: lightgrey;
+}
+
+.image-label-baseline {
+    display: flex;
+    justify-content: baseline;
+    justify-content: space-evenly;
+    color: white;
+    font-size: small;
+}
+
+/* end of top section
+
+beginning of middle section
+*/
+
+.info-section {
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+}
+
+.banner-text{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(250, 249, 248);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    bottom:0;
+    margin-bottom: 2px;
+}
+
+.banner-text, h1 {
+    color: black;
+    font-size: large;
+    
+}
+
+.content-boxes {
+    height: 300px;
+    width: 400px;
+    margin: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 5px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-evenly; */
+    box-sizing: border-box;
+    border: 3px;
+    border-color: lightgrey;
+    box-shadow: lightgray;
+    word-wrap: normal;
+    
+}
+
+.content-boxes, h5 {
+    color: navy;
+    font-size: x-small;
+    
+}
+
+/* end of middle section
+
+beginning of bottom section */
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: black;
+    
+    
+}
+
+.footer-text {
+    font-size: xx-small;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start; */
+    
+}
+
+/* .footer-text, img {
+    float: left;
+}
+
+.footer-text, h2 {
+    text-align: center;
+} */
+
+/* .footer-text, h3 {
+    float: right;
+    
+}  */
